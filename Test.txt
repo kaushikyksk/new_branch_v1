@@ -13,7 +13,8 @@ public class PriceCalculatorUtil {
 	
 	public double addPackagingCharge(int packagingCharges,double priceOfProductWithTax)
 	{
-		double productPriceWithpackagingCharge=priceOfProductWithTax+packagingCharges;
+		double productPriceWithpackaging=priceOfProductWithTax+packagingCharges;
+		ReskillDemandRAH
 		System.out.println("Product price after adding packingcharges - "+productPriceWithpackagingCharge);
 		return productPriceWithpackagingCharge;
 	}
