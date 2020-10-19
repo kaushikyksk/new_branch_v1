@@ -1,1 +1,21 @@
-Hello, This is a test file in new branch push this to master
+package com.test;
+
+public class PriceCalculatorUtil {
+
+	
+	public double addServiceTax(double taxPercentOfGovt,double nonTaxPriceOfProduct)
+	{
+		double SvctaxAmt=nonTaxPriceOfProduct*taxPercentOfGovt/100;
+		System.out.println("Service Tax amount - "+SvctaxAmt);
+		double priceOfProductWithTax=nonTaxPriceOfProduct+SvctaxAmt;
+		return priceOfProductWithTax;
+	}
+	
+	public double addPackagingCharge(int packagingCharges,double priceOfProductWithTax)
+	{
+		double productPriceWithpackagingCharge=priceOfProductWithTax+packagingCharges;
+		System.out.println("Product price after adding packingcharges - "+productPriceWithpackagingCharge);
+		return productPriceWithpackagingCharge;
+	}
+	
+}
