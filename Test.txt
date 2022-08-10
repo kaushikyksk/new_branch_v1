@@ -4,10 +4,12 @@ package com.test;
 
 public class PriceCalculatorUtil {
 
+
 	
 	public double addServiceTax(double taxPercentOfGovt,double nonTaxPriceOfProduct)
 	{
 		double SvctaxAmt=nonTaxPriceOfProduct*taxPercentOfGovt/100;
+		System.out.println("Service Tax amount - "+SvctaxAmt);
 		System.out.println("Service Tax amount - "+SvctaxAmt);
 		double priceOfProductWithTax=nonTaxPriceOfProduct+SvctaxAmt;
 		return priceOfProductWithTax;
